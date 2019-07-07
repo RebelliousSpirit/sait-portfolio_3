@@ -1,0 +1,20 @@
+{
+  "name": "project_one",
+  "version": "1.0",
+  "homepage": "http://",
+  "description": "widget about company",
+  "keywords": [
+    "widget",
+    "about",
+    "company",
+    "social",
+    "social links"
+  ],
+  "authors": [
+    "Inkarbekov Begzat <rebelliousspirit111@gmail.com>"
+  ],
+  "dependencies": {
+    "jquery": "3.4.0",
+    "slick": "*"
+  }
+}

@@ -1,0 +1,233 @@
+//*header styles
+.header__navbar{
+	font-size: 16px;
+	color: #4d6b80;
+	padding: 0 15px;
+	display: flex;
+	align-items: center;
+	a{
+		text-decoration: none;
+	}
+}
+.header__tel{
+	font-size: 16px;
+	line-height: 20px;
+	color: #4d6b80;
+	font-family: 'EB Garamond', serif;
+	padding: 25px 0 25px 25px;
+	float: right;
+	position: relative;
+	transition: 0.3s;
+	&:before{
+		content: "\f095";
+		font-family: "icomoon";
+		position: absolute;
+		left: 0;
+	}
+	&:hover{
+		color: #99D6FF;
+	}
+}
+.header__navbar-menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__top-nav{
+	ul{
+		li{
+			display: inline-block;
+			a{
+				font: 15px 'Roboto Mono', monospace;
+				color: #4d6b80;
+				transition: border 0.3s;
+				padding: 25px 0;
+				position: relative;
+				&:after{
+					content: "";
+					height: 2px;
+					width: 100%;
+					background-color: transparent;
+					position: absolute;
+					left: 0;
+					top: 45px;
+				}
+				&:hover:after{
+					background-color:#4d6b80;
+				}
+			}
+		}		
+	}		
+}	
+.header__top-nav{
+	li+li{
+		padding-left: 28px;
+	}
+}
+.header__contact{
+	font-size: 18px;
+	font-weight: bolder;
+	text-transform: capitalize;
+	border-color: #4d6b80;
+	color: #4d6b80;
+	transition: 0.3s;
+	&:hover{
+		background-color: #4d6b80;
+		color: #fff;
+	}
+}
+.header__lang-panel{
+	float: right;
+	padding-right: 18px;	
+	position: relative;
+	&:before{
+		content: "";
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 10px 7.5px 0 7.5px;
+		border-color: #4d6b80 transparent transparent transparent;
+		position: absolute;
+		top: 50%;
+		margin-top: -5px;
+		right: 0;
+		z-index: 1;
+		transition: 0.3s;
+	}
+	&:hover:before{
+		border-top-color: #99D6FF;
+	}
+	&:hover select{
+		cursor: pointer;
+		color: #99D6FF;
+	} 
+	form{		
+		select{
+			font-size: 16px;
+			font-weight: bolder;
+			text-decoration: underline;
+			background-color: #e5f5ff;
+			border: 0;
+			transition: 0.3s;
+			@include appearance(none);		
+		}				
+	}	 
+}
+//toggle menu
+.header__menu_toggle{
+	display: none;
+	position: relative;
+	.header__top-nav{
+		width: 100vw;
+		height: 100vh;
+		padding: 25px;
+		background-color: #e5f5ff;
+		position: absolute;
+		transition: 0.6s ease;
+		opacity: 0.85;
+		left: -120%;
+		top: 32px;
+		z-index: 10000;
+	}
+	.header__top-nav-active{
+		left: -15px;
+	}
+}
+.header__bars{
+	background: none;
+	color: #7AABCC;
+	font-size: 25px;
+	border: none;
+	transition: 0.3s;
+	&:hover{
+		color: #99D6FF;
+	}
+}
+//slider
+.slider-wrap{
+	position: relative;
+	.next-arrow,
+	.prev-arrow{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		color: #4d6b80;
+		background-color: transparent;
+		outline: none;
+		border: none;
+		font-size: 25px;
+		transition: 0.3s;
+		position: absolute;
+		top: 50%;
+		margin-top: -12px;
+		padding-top: 5px;
+		z-index: 1000;
+		border: 1px solid #4d6b80;
+		&:hover{
+			cursor: pointer;
+			border: 1px solid #fff;
+			color: #fff;
+		}
+	}
+	.next-arrow{
+		left: 5px;
+		padding-right: 10px;
+		&:before{
+			font-family: 'icomoon';
+			content: "\f053";
+		}
+	}
+	.prev-arrow{
+		right: 5px;
+		padding-left: 10px;
+		&:before{
+			font-family: 'icomoon';
+			content: "\f054";
+		}
+	}
+}
+.slider__panel{
+	font-family: 'Roboto Mono', monospace;
+	line-height: 17px;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	color: #e5f5ff;
+	border-left: 2px solid #fff;
+	background-color:  rgba(77,107,128, 0.6);
+	padding: 50px 25px;
+	margin-top: -150px;	
+	max-width: 550px;
+	max-height: 300px;
+	position: absolute;
+	top: 50%;
+	left: 75px;
+	&:before{
+		content: "";
+		display: block;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		width: 20px;
+		height: 10px;
+		position: absolute;
+		top: 50%;
+		left: -1px;
+		margin-top: -5px;
+	} 
+}
+.slider__header-top{
+	font-size: 12px;
+	opacity: 0.6;
+	margin-bottom: 55px;
+}
+.slider__header-bottom{
+	font-size: 22px;
+	line-height: 25px;
+	margin-bottom: 65px;	
+}
+.slider__link{
+	font-size: 12px;
+	transition: 0.3s;
+	&:hover{
+		text-decoration: none;
+	}	
+}

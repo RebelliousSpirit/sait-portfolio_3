@@ -1,0 +1,107 @@
+//*footer
+.footer__widget-link{
+	font: 14px $font-family-default;
+	text-decoration: underline;
+	color: #fff;	
+}
+.footer__upper-wrap{
+	background-color: #737a80;
+	padding-top: 25px;
+	padding-bottom: 70px;
+}
+.footer__widget{
+	padding-top: 35px;
+	line-height: 16px;
+}
+.widget-contact{
+	font-family: $font-family-second;
+}
+.widget-contact__phone{
+	margin-bottom: 15px;
+}
+.widget-contact__mail{
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.widget-contact__text{
+	font-family: $font-family-default;
+	font-size: 13px;
+	opacity: 0.7;
+}
+.widget-map__adress{
+	font-size: 12px;
+	color: #e5f5ff;
+	margin-bottom: 20px;
+}
+.widget-subscribe{
+	input{
+		@include placeholder(14px $font-family-default, #fff);
+	}
+}
+.widget-subscribe__email{
+	border: none;
+	background-color: transparent;
+	border-bottom: 1px solid #b9bdc0;
+	margin-bottom: 20px;
+	padding-right: 15px;
+}
+.widget-subscribe__submit{
+	background: none;
+	border: none;	
+}
+
+.widget-nav__links{
+	padding-left: 25px;
+	ul{
+		li{
+			margin-bottom: 10px;
+			display: block;
+			a{
+				text-transform: uppercase;
+				font: 12px $font-family-second;
+				font-weight: 400;
+				color:#fff;
+			}
+		}
+	}
+}
+.widget-get__title{
+	margin-bottom: 15px;
+	color:#e5f5ff;
+}
+.widget-get__btn{
+	transition: 0.3s;
+	&:hover{
+		color: #99D6FF;
+		border-color: #99D6FF;
+	}
+}
+.widget-communicate__title{
+	margin-bottom: 15px;
+}
+.footer__bottom-wrap{
+	background-color: #000;
+}
+.footer__copiright{
+	padding-left: 15px;
+	position: relative;
+	&:before{
+		font-family: 'icomoon';
+		content: "\f1f9";
+		position: absolute;
+		left: 0;
+	}
+}
+.footer__privacy,
+.footer__conditions{
+	font: 12px $font-family-second;
+	opacity: 0.7;
+	color: #fff;
+}
+.footer__conditions{
+	margin-left: 10px;
+}
+.footer__socilal-link_bottom{
+	color: #fff;
+	margin-left: 3px;
+}

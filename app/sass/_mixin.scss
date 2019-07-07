@@ -1,0 +1,110 @@
+
+@mixin transition($property, $duration, $timing-func){/*миксины*/
+	-o-transition: $property $duration $timing-func;
+	-moz-transition: $property $duration $timing-func;
+	-webkit-transition: $property $duration $timing-func;
+	-ms-transition: $property $duration $timing-func;
+	transition: $property $duration $timing-func;
+}
+@mixin flex($display, $flex-flow, $justify-content){
+	display: $display;
+	-o-flex-flow: $flex-flow;
+	-o-justify-content:$justify-content;
+	-moz-flex-flow: $flex-flow;
+	-moz-justify-content:$justify-content;
+	-webkit-flex-flow: $flex-flow;
+	-webkit-justify-content:$justify-content;
+	-ms-flex-flow: $flex-flow;
+	-ms-justify-content:$justify-content;
+	flex-flow: $flex-flow;
+	justify-content:$justify-content;
+}
+@mixin flex-item($grow, $shrink, $basis){
+	-o-flex:$grow $shrink $basis;
+	-webkit-flex:$grow $shrink $basis;
+	-moz-flex:$grow $shrink $basis;
+	flex:$grow $shrink $basis;
+}
+@mixin translate( $x, $y){
+	-o-transform:translate($x, $y);
+	-moz-transform:translate($x, $y);
+	-webkit-transform:translate($x, $y);
+	-ms-transform:translate($x, $y);
+	transform:translate($x, $y); 
+}
+@mixin scale( $scale, $unit){
+	-o-transform:$scale($unit);
+	-moz-transform:$scale($unit);
+	-webkit-transform:$scale($unit);
+	-ms-transform:$scale($unit);
+	transform:$scale($unit); 
+}
+@mixin animation($name, $duration, $timing-func, $delay, $iteration-count){
+/*сокращеная запись animation: fadeOut 2s ease-in-out 5s 2 alternate forwards;*/
+	/*имя, длительность, тайминг, количество повторов, направление,
+отсрочка и режим заполнения*/
+	-webkit-animation-name:$name;
+	-webkit-animation-duration: $duration;
+	-webkit-animation-timing-function: $timing-func;
+	-webkit-animation-delay: $delay;
+	-webkit-animation-iteration-count: $iteration-count;
+	animation-name: $name;
+	animation-timing-function: $timing-func;	
+	animation-duration: $duration;
+	animation-delay: $delay;
+	animation-iteration-count: $iteration-count;/*бесконечное количество раз - infinite*/
+}
+
+@mixin rotate($deg){/*вращение*/
+	-o-transform:rotate($deg);
+	-moz-transform:rotate($deg);
+	-webkit-transform:rotate($deg);
+	-ms-transform:rotate($deg);
+	transform:rotate($deg); 
+}
+
+@mixin skew($x, $y){/*скашивание*/
+	-o-transform:skew($x, $y);
+	-moz-transform:skew($x, $y);
+	-webkit-transform:skew($x, $y);
+	-ms-transform:skew($x, $y);
+	transform:skew($x, $y);
+}
+
+@mixin scale($deg){/*масштабирование*/
+	transform: scale($deg);
+	-webkit-transform: scale($deg);
+	-ms-transform: scale($deg);
+	-o-transform: scale($deg);
+}
+
+@mixin transition($elem, $timing, $func){/*transition*/
+	-o-transition:$elem $timing $func;
+	-moz-transition:$elem $timing $func;
+	-webkit-transition:$elem $timing $func;
+	-ms-transition:$elem $timing $func;
+	transition:$elem $timing $func;
+}
+@mixin appearance($val){
+	-moz-appearance:$val;
+	-webkit-appearance:$val;
+	appearance:$val;
+}
+@mixin placeholder($font, $color){
+	&::-webkit-input-placeholder{
+		font: $font;
+		color: $color;
+	}
+	&::-moz-placeholder{
+		font: $font;
+		color: $color;
+	}
+	&:-moz-placeholder{
+		font: $font;
+		color: $color;
+	}
+	&:-ms-placeholder{
+		font: $font;
+		color: $color;
+	}
+}
