@@ -7,7 +7,7 @@
 	<meta name="keywords" content="" >	
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,500,500i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/fonts-moon.css">
 	<link rel="stylesheet" href="custom/libs/jquery-ui-1.12.1.custom/jquery-ui.min.css">
@@ -180,7 +180,7 @@
 					</div>
 					<div class="col-md-5 col-md-offset">
 						<div class="your-method__panel-info">
-							<div class="accordion">
+							<div class="accordion second-bg-translucent">
 								<h4 class="accordion__header">Анализ & Планирование</h4>
 								<div class="accordion__panel">
 									<p>
@@ -297,11 +297,13 @@ excepturi? Unde, possimus...</p>
 						<p class="widget-map__adress">10203  ул.Ленина 21,г.Москва</p>
 						<a href="#" class="footer__widget-link default-link">Посмотреть на карте</a>
 					</div>
-					<div class="col-sm-3 col-md-2 footer__widget widget-subscribe">						
-						<form action="#" method="post" class="widget-subscribe__form">
-							<input type="text" placeholder="Email" name="email" class="widget-subscribe__email">
-							<button type="submit" class="widget-subscribe__submit footer__widget-link">подписаться на рассылку</button>  
-						</form>					
+					<div class="col-sm-3 col-md-2 footer__widget widget-subscribe">
+						<div class="addon-form">
+							<form action="#" method="post" class="widget-subscribe__form">
+								<input type="text" placeholder="Email" name="email" class="addon-form__text">
+								<button type="submit" class="addon-form__submit footer__widget-link">подписаться на рассылку</button>  
+							</form>
+						</div>								
 					</div>
 					<hr class="col-md-8 col-md-offset-2">
 				</div>
@@ -370,7 +372,7 @@ excepturi? Unde, possimus...</p>
 	<script
 	src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="custom/libs/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-	<script  src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script  src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

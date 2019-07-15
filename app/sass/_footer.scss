@@ -33,23 +33,15 @@
 	color: #e5f5ff;
 	margin-bottom: 20px;
 }
-.widget-subscribe{
-	input{
-		@include placeholder(14px $font-family-default, #fff);
+.footer__widget{
+	.addon-form__text{
+		margin-bottom: 25px;
 	}
 }
-.widget-subscribe__email{
-	border: none;
-	background-color: transparent;
-	border-bottom: 1px solid #b9bdc0;
-	margin-bottom: 20px;
-	padding-right: 15px;
-}
 .widget-subscribe__submit{
-	background: none;
-	border: none;	
+	background-color: transparent;
+	border: none;
 }
-
 .widget-nav__links{
 	padding-left: 25px;
 	ul{
